@@ -41,3 +41,4 @@ In the project there's an [.env file](.env) with all environment variables neede
 2. In case any of them returns an error we the response will have an empty array for that particular endpoint.
 3. Unit test cases have been added to test 2 scenarious: when all services returns and when one of them fails.
    1. We are not accessing the real services in the uni tests. I'm mocking the axios GET request responses.
+4. I'm also assuming the client only wants the list of tweets, statuses and photos, thus this is the only information being returned.

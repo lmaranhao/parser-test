@@ -1,4 +1,5 @@
 const axios = require('axios');
+const responseFactory = require('./ResponseFactory');
 
 class HttpClient {
 
@@ -24,7 +25,7 @@ class HttpClient {
             const response = await axios.get(url, {
                 timeout: process.env.TIMEOUT
             });
-            return response.data;
+            return responseFactory(response.data);
         } catch (e) {
             return [];
         }

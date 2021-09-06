@@ -64,14 +64,11 @@ test('testing all services responded', async() => {
     const response = await httpClient.getMedia();
     const jsonResponse = JSON.parse(response);
 
-    expect(jsonResponse["twitter"][0].username).toBe('@GuyEndoreKaiser');
-    expect(jsonResponse["twitter"][0].tweet).toContain('If you live to be 100');
+    expect(jsonResponse["twitter"][0]).toContain('If you live to be 100');
     expect(jsonResponse["twitter"].length).toBe(2);
-    expect(jsonResponse["facebook"][1].name).toBe('Drama Pig');
-    expect(jsonResponse["facebook"][1].status).toContain('I am in a hospital');
+    expect(jsonResponse["facebook"][1]).toContain('I am in a hospital');
     expect(jsonResponse["facebook"].length).toBe(2);
-    expect(jsonResponse["instagram"][4].username).toBe('hipster5');
-    expect(jsonResponse["instagram"][4].picture).toBe('this one is of a cat');
+    expect(jsonResponse["instagram"][4]).toBe('this one is of a cat');
     expect(jsonResponse["instagram"].length).toBe(5);
 });
 
@@ -84,12 +81,10 @@ test('testing 1 service failed', async() => {
     });
     const response = await httpClient.getMedia();
     const jsonResponse = JSON.parse(response);
-    
-    expect(jsonResponse["twitter"][0].username).toBe('@GuyEndoreKaiser');
-    expect(jsonResponse["twitter"][0].tweet).toContain('If you live to be 100');
+
+    expect(jsonResponse["twitter"][0]).toContain('If you live to be 100');
     expect(jsonResponse["twitter"].length).toBe(2);
-    expect(jsonResponse["facebook"][1].name).toBe('Drama Pig');
-    expect(jsonResponse["facebook"][1].status).toContain('I am in a hospital');
+    expect(jsonResponse["facebook"][1]).toContain('I am in a hospital');
     expect(jsonResponse["facebook"].length).toBe(2);
     expect(jsonResponse["instagram"].length).toBe(0);
 });
