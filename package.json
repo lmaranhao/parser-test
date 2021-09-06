@@ -1,0 +1,28 @@
+{
+  "name": "parser-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "axios": "^0.21.3",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "jest": "^27.1.0"
+  },
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmaranhao/parser-test.git"
+  },
+  "author": "lmaranhao@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lmaranhao/parser-test/issues"
+  },
+  "homepage": "https://github.com/lmaranhao/parser-test#readme"
+}
