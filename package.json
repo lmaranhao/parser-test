@@ -1,5 +1,5 @@
 {
-  "name": "parser-test",
+  "name": "social-networks-feed-test",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -17,12 +17,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lmaranhao/parser-test.git"
+    "url": "git+https://github.com/lmaranhao/social-networks-feed-test.git"
   },
   "author": "lmaranhao@gmail.com",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lmaranhao/parser-test/issues"
+    "url": "https://github.com/lmaranhao/social-networks-feed-test/issues"
   },
-  "homepage": "https://github.com/lmaranhao/parser-test#readme"
+  "homepage": "https://github.com/lmaranhao/social-networks-feed-test#readme"
 }
